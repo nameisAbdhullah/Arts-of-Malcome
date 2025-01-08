@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Malcolm Photography</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Add your custom styles here */
+        .contact-section {
+            padding: 50px 0;
+            background-color: #f4f7fa;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 30px;
+        }
+
+        .contact-info div {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .contact-info h3 {
+            font-size: 1.6rem;
+            color: #1f4037;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .contact-info .icon {
+            font-size: 24px;
+            color: #1f4037;
+            margin-right: 10px;
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+            animation: slideIn 1s ease-out;
+        }
+
+        .contact-form h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #1f4037;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            padding: 12px 20px;
+            background-color: #1f4037;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #3d5a47;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-50%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="admin.html" class="admin-btn">Admin Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1 class="section-title">Contact Malcolm Photography</h1>
+            <p class="section-description">We would love to hear from you! Feel free to reach out to us using the information below or fill out the contact form.</p>
+            
+            <div class="contact-info">
+                <div>
+                    <h3><span class="icon">📞</span> Phone</h3>
+                    <p>+44-482-7890</p>
+                    <p>+44-735-4351</p>
+                </div>
+                <div>
+                    <h3><span class="icon">📧</span> Email</h3>
+                    <p>contact@malcolmarts.com</p>
+                </div>
+                <div>
+                    <h3><span class="icon">📍</span> Address</h3>
+                    <p>30/6,St thomas Lane, west Scotland, PH 65321</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Malcolm Photography</p>
+    </footer>
+</body>
+</html>

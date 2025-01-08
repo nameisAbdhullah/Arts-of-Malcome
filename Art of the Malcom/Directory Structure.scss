@@ -1,0 +1,22 @@
+project/
+│
+├── index.html          (Home Page - includes Admin Dashboard button)
+├── about.html          (About Page)
+├── gallery.html        (Gallery Page)
+├── prices.html         (Pricing Page)
+├── enquiry.html        (Enquiry Form Page)
+├── admin.html          (Admin Login Page)
+├── dashboard.html      (Admin Dashboard - only accessible after login)
+│
+├── css/                (Folder for CSS files)
+│   └── styles.css      (Main CSS file for the entire website)
+│
+├── js/                 (Folder for JavaScript files)
+│   └── script.js       (Main JS file - includes admin login logic)
+│
+├── assets/             (Folder for images, fonts, or other assets)
+│   └── images/         (Subfolder for images used in the website)
+│       └── logo.png    (Example logo file)
+│
+└── server/             (Optional folder for backend server logic, if needed)
+    └── server.js       (Placeholder file for Node.js backend, optional)

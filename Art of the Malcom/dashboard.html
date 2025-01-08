@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+    <nav>
+      <ul>
+        <li><a href="enquiry.html">View Enquiries</a></li>
+        <li><a href="#">Manage Bookings</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <main class="admin-dashboard">
+      <div class="dashboard-container">
+          <h2>Admin Dashboard</h2>
+          <section class="dashboard-table">
+              <h3>Client Enquiries</h3>
+              <table>
+                  <thead>
+                      <tr>
+                          <th>Name</th>
+                          <th>Email</th>
+                          <th>Event Date</th>
+                          <th>Location</th>
+                          <th>Message</th>
+                      </tr>
+                  </thead>
+                  <tbody id="enquiryTable">
+                      <!-- Inquiries will be inserted here -->
+                  </tbody>
+              </table>
+          </section>
+      </div>
+  </main>
+
+  <footer>
+      <p>&copy; 2025 Malcolm Photography</p>
+  </footer>
+
+  <script>
+      // Simulating an array of client enquiries that would be retrieved from the server/database
+      const clientEnquiries = [
+          {
+              name: "John Doe",
+              email: "john.doe@example.com",
+              eventDate: "2025-02-20",
+              location: "New York",
+              message: "Looking to book a portrait session for my wedding."
+          },
+          {
+              name: "Jane Smith",
+              email: "jane.smith@example.com",
+              eventDate: "2025-03-15",
+              location: "Los Angeles",
+              message: "Interested in wildlife photography for my safari trip."
+          }
+      ];
+
+      // Function to display enquiries
+      function displayEnquiries() {
+          const tableBody = document.getElementById('enquiryTable');
+          clientEnquiries.forEach(enquiry => {
+              const row = document.createElement('tr');
+              row.innerHTML = `
+                  <td>${enquiry.name}</td>
+                  <td>${enquiry.email}</td>
+                  <td>${enquiry.eventDate}</td>
+                  <td>${enquiry.location}</td>
+                  <td>${enquiry.message}</td>
+              `;
+              tableBody.appendChild(row);
+          });
+      }
+
+      // Display the enquiries when the page loads
+      displayEnquiries();
+  </script>
+  </main>
+</body>
+</html>
